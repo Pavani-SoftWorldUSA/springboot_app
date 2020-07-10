@@ -17,8 +17,6 @@ pipeline {
     // Static Code Analysis
     stage('Static Code Analysis') {
       steps {
-        deleteDir()
-        checkout scm
         sh "echo 'Run Static Code Analysis'"
       }
     }
@@ -26,8 +24,6 @@ pipeline {
     // Unit Tests
     stage('Unit Tests') {
       steps {
-        deleteDir()
-        checkout scm
         sh "echo 'Run Unit Tests'"
       }
     }
@@ -35,8 +31,6 @@ pipeline {
     // Acceptance Tests
     stage('Acceptance Tests') {
       steps {
-        deleteDir()
-        checkout scm
         sh "echo 'Run Acceptance Tests'"
       }
     }
